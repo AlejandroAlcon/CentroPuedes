@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Centro Puedes</string>
+    <string name="ingrese_numero">Ingrese Numero de Celular</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="cambio_numero">Cambiaste de numero?</string>
+    <string name="registrar">Registrate</string>
+</resources>
