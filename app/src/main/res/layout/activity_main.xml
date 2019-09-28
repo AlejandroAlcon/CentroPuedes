@@ -9,8 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -25,9 +27,9 @@
                     android:textStyle="italic"/>
                 <ImageView
                     android:id="@+id/imageViewLogoMain"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="100dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="10dp"
                     android:background="#fff"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/ic_launcher_round"/>
@@ -38,9 +40,12 @@
                     android:inputType="phone"
                     android:hint="@string/ingrese_numero"/>
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@drawable/desing_redondo"
+                    android:textColor="#fff"
+                    android:onClick="ingresar"
                     android:text="@string/ingresar"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -48,11 +53,17 @@
                     android:layout_gravity="center_horizontal"
                     android:textColor="#5959FF"
                     android:textStyle="italic"
-                    android:text="@string/cambio_numero"/>
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/cambio_numero"
+                    android:onClick="govideo"/>
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:background="@drawable/desing_redondo"
+                    android:textColor="#fff"
+                    android:onClick="register"
                     android:text="@string/registrar"/>
             </LinearLayout>
         </ScrollView>

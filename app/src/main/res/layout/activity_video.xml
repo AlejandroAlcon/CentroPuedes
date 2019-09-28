@@ -5,5 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VideoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewTittleVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="Titulo Video"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnonce"
+                        android:text="o"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnconti"
+                        android:text="c"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnstop"
+                        android:text="s"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnplay"
+                        android:text="p"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <VideoView
+                        android:id="@+id/videoViewCurs"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                    <ProgressBar
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/progrss"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textViewDescVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit montes, venenatis proin posuere tincidunt commodo maecenas nulla sagittis, cubilia morbi tristique per platea id ultrices. Suspendisse sollicitudin feugiat urna condimentum natoque litora nulla quisque felis, cursus dictum ut faucibus proin orci leo ullamcorper, sociosqu gravida fermentum tempor aliquet hac morbi magnis. Ut dictum venenatis a odio scelerisque eleifend tellus et, gravida pellentesque sollicitudin leo vulputate donec himenaeos lacinia, nisi metus orci ac felis rutrum suscipit.
+
+Lacinia vulputate posuere integer commodo luctus nascetur rutrum cubilia, diam in eros per erat aliquet leo litora imperdiet, duis taciti dis iaculis nulla tristique eleifend. Felis iaculis feugiat sociosqu ornare urna, nullam cum vehicula nibh egestas hac, at sapien id platea. Cras interdum varius et non sollicitudin aenean, quam ut augue dictumst potenti, felis suscipit risus vulputate senectus."/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

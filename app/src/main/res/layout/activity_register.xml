@@ -6,4 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Completo"
+                android:layout_gravity="center"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextRegisterName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Numero Telefono"
+                android:layout_gravity="center"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextRegisterNumberPhone"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electronico"
+                android:layout_gravity="center"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextRegisterMail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Genero (M/F)"
+                android:layout_gravity="center"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextRegisterGen"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Fecha Nacimiento"
+                android:layout_gravity="center"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditTextRegisterDate"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonNextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/desing_redondo"
+                android:text="Registrar"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff"
+                android:onClick="Registrar"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
